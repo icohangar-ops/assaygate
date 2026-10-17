@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>AssayGate — Pitch Deck</title>
+<style>
+@page{size:13.333in 7.5in;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0b0e22;color:#eef2ff;font-family:Arial,Helvetica,sans-serif}
+.slide{width:1280px;height:720px;padding:56px 68px;position:relative;overflow:hidden;page-break-after:always;background:linear-gradient(135deg,#0d1028 0%,#141a38 58%,#1b1540 100%)}
+.slide:before{content:"";position:absolute;top:0;left:0;right:0;height:8px;background:#2ee6c8}
+.num{position:absolute;right:68px;bottom:34px;color:#7f8bb3;font-size:14px;letter-spacing:.14em}
+.kicker{display:inline-block;border:1.5px solid #2ee6c8;color:#2ee6c8;border-radius:999px;padding:9px 18px;font-weight:700;letter-spacing:.12em;font-size:14px;text-transform:uppercase}
+h1{font-size:92px;line-height:.95;margin:34px 0 20px;letter-spacing:-.03em}
+h2{font-size:52px;line-height:1.05;margin:22px 0 24px;letter-spacing:-.02em}
+h3{color:#fbbf24;font-size:28px;line-height:1.25}
+p,li{font-size:23px;line-height:1.45;color:#cbd5f5}
+.lead{font-size:27px;color:#aebadd;max-width:760px}
+.accent{color:#fbbf24}.teal{color:#2ee6c8}.red{color:#fb7185}
+.grid2{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:start}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:28px}
+.card{background:#101936;border:1.5px solid #2b3a6b;border-radius:20px;padding:26px}
+.card b{color:#fff;font-size:22px}.card p{font-size:19px;margin-top:8px}
+.cert{background:#0e1a36;border:2px solid #35508f;border-radius:22px;padding:28px;box-shadow:0 20px 50px rgba(0,0,0,.35)}
+.cert h4{color:#7db4ff;letter-spacing:.12em;font-size:16px}.cert .id{font-size:27px;font-weight:800;margin:10px 0 18px}
+.row{display:flex;justify-content:space-between;border-bottom:1px solid #24365f;padding:10px 0;font-size:19px}.row span{color:#93a4cf}.row b{color:#fff}
+.pill{display:inline-block;background:#052e2b;border:1.5px solid #14b8a6;color:#2ee6c8;border-radius:12px;padding:14px 18px;font-weight:800;font-size:20px;margin-top:24px}
+.freeze{background:#3b1118;border:1.5px solid #e11d48;color:#fb7185;border-radius:12px;padding:13px 16px;font-weight:800;margin-top:14px;text-align:center}
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:30px}
+.step{background:#101936;border-top:5px solid #2ee6c8;border-radius:16px;padding:24px;min-height:210px}
+.step i{font-style:normal;color:#2ee6c8;font-weight:900;font-size:15px;letter-spacing:.12em}.step b{display:block;font-size:24px;margin:12px 0}.step p{font-size:18px}
+code{font-family:ui-monospace,Menlo,monospace;background:#0a2a26;color:#5eead4;border-radius:8px;padding:2px 7px;font-size:.88em}
+.test{font-family:ui-monospace,Menlo,monospace;background:#07111f;border:1.5px solid #23406e;border-radius:18px;padding:26px;font-size:19px;line-height:1.55;color:#b6f0df;white-space:pre-wrap}
+a{color:#7db4ff}
+.footer{position:absolute;left:68px;bottom:34px;color:#7f8bb3;font-size:16px}
+ul{margin-left:26px} li{margin:12px 0}
+.bigstat{font-size:58px;font-weight:900;color:#fff}.statlabel{color:#93a4cf;font-size:18px}
+</style></head><body>
+
+<section class="slide"><span class="kicker">Portaldot Hacker House 2026 · Ecosystem DApps</span>
+<div class="grid2"><div><h1>AssayGate</h1><h3>Guarded RWA escrow for critical-minerals offtake — on Portaldot</h3><p class="lead" style="margin-top:22px">ERC-721 assay certificate &nbsp;•&nbsp; CFO-capped agent tranches &nbsp;•&nbsp; freeze on grade dispute</p><div class="pill">✦ &nbsp;Cap 20,000 oUSD &nbsp;•&nbsp; Escrow 100,000 oUSD</div></div>
+<div class="cert"><h4>ASSAY CERTIFICATE</h4><div class="id">CO-LUAL-2026-014</div><div class="row"><span>Mineral</span><b>Cobalt hydroxide</b></div><div class="row"><span>Grade</span><b>21.50% Co</b></div><div class="row"><span>Weight</span><b>24,000 kg</b></div><div class="row"><span>Origin</span><b>Kolwezi, DRC</b></div><div class="row"><span>Escrow</span><b>100,000 oUSD</b></div><div class="row"><span>Tranche cap</span><b>20,000 oUSD</b></div><div class="freeze">⚠ &nbsp;FREEZE ON DISPUTE</div></div></div>
+<div class="footer">github.com/icohangar-ops/assaygate</div><div class="num">01 / 09</div></section>
+
+<section class="slide"><span class="kicker">The problem</span><h2>Miners ship first.<br>Then they wait — and argue.</h2>
+<div class="grid3"><div class="card"><b>Provisional payment is hostage</b><p>Junior miners deliver concentrate under offtake contracts, then wait while the buyer holds most of the payment pending final assay.</p></div><div class="card"><b>Grade is a dispute, not a number</b><p>Seller lab says 21.50% Co. Buyer lab says 19.10%. Weight, moisture and sampling become leverage to delay or discount payment.</p></div><div class="card"><b>Agents make it riskier</b><p>An automated payment agent without hard limits can move too much, too fast — with no CFO cap and no instant freeze when evidence changes.</p></div></div>
+<p style="margin-top:30px">The result: working-capital squeeze for the seller, counterparty risk for the buyer, and no shared, tamper-evident record either side can act on.</p><div class="num">02 / 09</div></section>
+
+<section class="slide"><span class="kicker">The solution</span><h2>One certificate. One escrow.<br><span class="teal">Hard limits on every draw.</span></h2>
+<div class="grid2"><div><ul><li><b style="color:#fff">AssayCertificate (ERC-721)</b> — shipment id, mine, mineral, origin, grade (bps), dry weight and assay URI, minted by a lab attester.</li><li><b style="color:#fff">AssayEscrow (ERC-20 oUSD)</b> — buyer funds provisional payment; the seller is the only payee.</li><li><b style="color:#fff">CFO cap + agent allowlist</b> — only allowlisted agents release, and never above the tranche cap.</li><li><b style="color:#fff">Dispute freeze</b> — CFO or arbiter freezes instantly; every release reverts until cleared.</li></ul></div>
+<div class="cert"><h4>DEMO LOT</h4><div class="id">CO-LUAL-2026-014</div><div class="row"><span>Seller</span><b>Lualaba Concentrate SPRL</b></div><div class="row"><span>Buyer</span><b>Northshore Metals BV</b></div><div class="row"><span>Funded</span><b>100,000 oUSD</b></div><div class="row"><span>Released in demo</span><b>15,000 oUSD</b></div><div class="row"><span>Over-cap attempt</span><b>25,000 — rejected</b></div></div></div><div class="num">03 / 09</div></section>
+
+<section class="slide"><span class="kicker">How it works</span><h2>From assay to payment — guarded at each step</h2>
+<div class="flow"><div class="step"><i>STEP 1</i><b>Mint</b><p>Lab attester mints the ERC-721 assay certificate: grade, weight, origin and assay URI on-chain.</p></div><div class="step"><i>STEP 2</i><b>Fund</b><p>CFO opens escrow and sets the 20,000 oUSD cap. Buyer funds 100,000 oUSD. Seller is sole payee.</p></div><div class="step"><i>STEP 3</i><b>Agent release</b><p>Agent previews first: <code>RELEASE</code> at 15,000 under cap; <code>REJECT</code> at 25,000 — chain reverts <code>ExceedsTrancheCap</code>.</p></div><div class="step" style="border-color:#fb7185"><i style="color:#fb7185">STEP 4</i><b>Dispute freeze</b><p>Buyer re-assay 19.10% vs 21.50%: arbiter freezes. Agent returns <code>HOLD</code>; releases revert <code>FrozenByDispute</code>.</p></div></div>
+<p style="margin-top:26px">The agent reads before it sends — and the contract enforces the cap even if the agent is compromised.</p><div class="num">04 / 09</div></section>
+
+<section class="slide"><span class="kicker">Why Portaldot</span><h2>Built for Portaldot’s<br>EVM + WASM future</h2>
+<div class="grid2"><div><ul><li><b style="color:#fff">EVM today:</b> Solidity 0.8.24 contracts (ERC-721 + escrow) deploy via Portaldot’s pallet-revive EVM path.</li><li><b style="color:#fff">WASM roadmap:</b> Portaldot’s dual-runtime design leaves room for native ink!/WASM modules beside the EVM escrow.</li><li><b style="color:#fff">Low-cost settlement:</b> frequent small tranche releases need cheap, fast finality — not mainnet-Ethereum fees.</li></ul></div>
+<div class="card"><b>Portaldot V3 testnet (configured &amp; probed)</b><p>Chain ID <code>420420777</code> · RPC <code>test-evm-rpc-v3.portaldot.dev</code></p><p>Read-only <code>eth_chainId</code> verified 17 Oct 2026 → <code>0x190f1ca9</code></p><p>Gas: tPOTv3 (14 decimals) · Deploy script: <code>npm run deploy:portaldot</code></p><p style="color:#fbbf24">Honest status: no public faucet yet — deploy lands as soon as tPOTv3 reaches the deployer (organiser allocation / Discord ticket).</p></div></div><div class="num">05 / 09</div></section>
+
+<section class="slide"><span class="kicker">Demo evidence</span><h2>It runs. The tests prove the guards.</h2>
+<div class="grid2"><div class="test">AssayGate — 8 passing (425ms)
+✔ mints certificate: grade, weight, origin
+✔ funds escrow against the certificate
+✔ agent release under CFO cap succeeds
+✔ release over CFO cap reverts
+✔ arbiter dispute freezes escrow
+✔ freeze blocks agent release
+✔ non-allowlisted caller cannot release
+✔ CFO unfreeze → later release succeeds</div>
+<div><div class="card"><b>▶ 3-minute demo video</b><p><a href="https://youtu.be/fZz8EEL_O_g">youtu.be/fZz8EEL_O_g</a></p><p>Mint → fund 100,000 → release 15,000 → 25,000 rejected → dispute freeze → agent HOLD.</p></div><div class="card" style="margin-top:18px"><b>One-command proof</b><p><code>npm install &amp;&amp; npm test &amp;&amp; npm run demo</code> — ends <code>DEMO OK</code>, no faucet or wallet needed.</p></div></div></div><div class="num">06 / 09</div></section>
+
+<section class="slide"><span class="kicker">Market &amp; business</span><h2>Critical minerals need<br>payment infrastructure</h2>
+<div class="grid3"><div class="card"><div class="bigstat">Jr.</div><p><b>Junior miners &amp; concentrators</b> — cobalt, lithium, copper and tin suppliers squeezed by provisional-payment terms.</p></div><div class="card"><div class="bigstat">B2B</div><p><b>Offtake buyers &amp; traders</b> — who need assay-linked release conditions instead of manual email-and-bank workflows.</p></div><div class="card"><div class="bigstat">CFO</div><p><b>Finance teams</b> — caps, allowlists and freeze rights mirror real treasury controls.</p></div></div>
+<p style="margin-top:26px"><b style="color:#fff">Business model (proposed):</b> per-shipment SaaS fee + escrow basis-point fee, sold with Cubiczan CFO advisory for mining and trading clients. Built by a finance operator, not a generic payments team.</p><div class="num">07 / 09</div></section>
+
+<section class="slide"><span class="kicker">Roadmap</span><h2>Testnet before Nov 5.<br>Then mainnet, then more minerals.</h2>
+<div class="flow"><div class="step"><i>NOW → NOV 5</i><b>Portaldot testnet</b><p>Claim tPOTv3, run <code>deploy:portaldot</code>, publish contract addresses + deploy tx in the BUIDL.</p></div><div class="step"><i>NEXT</i><b>Stronger controls</b><p>Cumulative CFO budget per agent, umpire-assay unfreeze path, multi-attester assays.</p></div><div class="step"><i>THEN</i><b>Mainnet pilot</b><p>One real cobalt/copper corridor, audited contracts, stablecoin settlement beside oUSD demo token.</p></div><div class="step"><i>SCALE</i><b>More minerals</b><p>Lithium, copper, tin templates; buyer/trader dashboards; lender-ready shipment history.</p></div></div><div class="num">08 / 09</div></section>
+
+<section class="slide"><span class="kicker">Team</span><h2>AssayGate</h2>
+<div class="grid2"><div><p style="font-size:30px;color:#fff"><b>Shyam Desigan</b> — solo builder</p><p style="margin-top:16px">Founder, <b style="color:#fff">Cubiczan</b> — CFO advisory. Finance-controls design (caps, allowlists, freeze rights) translated directly into contract rules. Product decisions, offtake workflow and submission are his; implementation was AI-assisted and disclosed in the repo.</p><div class="pill">Repo → github.com/icohangar-ops/assaygate</div><p style="margin-top:20px;font-size:19px">Demo: <a href="https://youtu.be/fZz8EEL_O_g">youtu.be/fZz8EEL_O_g</a> &nbsp;·&nbsp; Contracts MIT, unaudited, hackathon MVP — no real offtake funds custodied.</p></div>
+<div class="cert"><h4>ASSAY CERTIFICATE</h4><div class="id">CO-LUAL-2026-014</div><div class="row"><span>Grade</span><b>21.50% Co</b></div><div class="row"><span>Weight</span><b>24,000 kg</b></div><div class="row"><span>Escrow</span><b>100,000 oUSD</b></div><div class="row"><span>Tests</span><b>8 passing</b></div><div class="freeze">FREEZE ON DISPUTE</div></div></div>
+<div class="footer">AssayGate — guarded RWA escrow for critical-minerals offtake, on Portaldot</div><div class="num">09 / 09</div></section>
+
+</body></html>
