@@ -1,0 +1,17 @@
+{
+  "shipmentId": "CO-LUAL-2026-014",
+  "mine": "Kolwezi South",
+  "mineral": "Cobalt hydroxide",
+  "origin": "Lualaba, DRC",
+  "gradeBps": 2150,
+  "weightKg": 24000,
+  "assayUri": "ipfs://bafybeiasaygatecolual2026014sample",
+  "fundOusd": "100000",
+  "trancheCapOusd": "20000",
+  "releaseOusd": "15000",
+  "overCapOusd": "25000",
+  "disputeReason": "Buyer lab re-assay 19.10% Co versus certificate 21.50% Co. Provisional payment frozen pending umpire assay.",
+  "buyerName": "Northshore Metals BV",
+  "sellerName": "Lualaba Concentrate SPRL",
+  "concession": "PE-4418"
+}

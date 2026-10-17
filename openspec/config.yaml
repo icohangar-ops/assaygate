@@ -1,0 +1,5 @@
+schema: spec-driven
+context: |
+  AssayGate is a Portaldot Hacker House 2026 MVP. ERC-721 assay certificates
+  and a CFO-capped ERC-20 escrow with an allowlisted release agent and a
+  dispute freeze. Local Hardhat demo must run without testnet funds.

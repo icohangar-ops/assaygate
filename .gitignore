@@ -1,0 +1,16 @@
+node_modules/
+artifacts/
+cache/
+typechain-types/
+dist/
+coverage/
+.env
+.env.local
+web/.next/
+web/out/
+deployments/*.json
+!deployments/.gitkeep
+*.log
+.DS_Store
+uploads/
+agent-tools/

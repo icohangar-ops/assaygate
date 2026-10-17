@@ -1,0 +1,31 @@
+{
+  "name": "assaygate",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Guarded RWA escrow for critical-minerals offtake. ERC-721 assay certificates and CFO-capped tranche release on Portaldot EVM.",
+  "license": "MIT",
+  "scripts": {
+    "chain": "HARDHAT_DISABLE_TELEMETRY_PROMPT=true hardhat node --hostname 127.0.0.1 --port 18545",
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "demo": "hardhat run scripts/demo.ts",
+    "deploy:local": "hardhat run scripts/deploy.ts --network localhost",
+    "deploy:portaldot": "hardhat run scripts/deploy.ts --network portaldot",
+    "agent": "hardhat run scripts/agent.ts --network localhost",
+    "check:portaldot": "hardhat run scripts/checkPortaldot.ts --network portaldot",
+    "dev": "npm run dev --workspace web"
+  },
+  "workspaces": [
+    "web"
+  ],
+  "dependencies": {
+    "@openzeppelin/contracts": "5.1.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "5.0.0",
+    "@types/node": "^22.15.0",
+    "dotenv": "^16.6.1",
+    "hardhat": "2.29.1",
+    "typescript": "^5.9.2"
+  }
+}

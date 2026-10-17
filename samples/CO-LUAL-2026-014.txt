@@ -1,0 +1,12 @@
+ASSAY NOTE (sample, not a laboratory certificate)
+Lot: CO-LUAL-2026-014
+Mine: Kolwezi South, concession PE-4418
+Product: Cobalt hydroxide
+Origin: Lualaba Province, Democratic Republic of the Congo
+Dry weight: 24,000 kg
+Grade: 21.50% Co (2,150 basis points)
+Attestor desk: AssayGate sample attester
+Document hash pointer: ipfs://bafybeiasaygatecolual2026014sample
+
+This file is a local stand-in for the assay PDF a lab would pin to IPFS.
+The on-chain certificate stores the URI. It does not store the PDF.
